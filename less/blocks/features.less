@@ -1,0 +1,32 @@
+.features {
+  .clearfix();
+  width: 835px;
+  padding-top: 21px;
+  padding-bottom: 24px;
+  margin-left: 337px;
+  margin-bottom: 38px;
+  background: @bg-red;
+  &__item {
+    float: left;
+    width: 240px;
+    margin-left: 44px;
+    padding: 0;
+    text-align: center;
+    color: @white;
+    &:nth-of-type(3n+3) {
+      margin-left: 21px;
+    }
+  }
+  &__title {
+    margin: 0 0 4px 0;
+    font-family: @font-bold;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  &__text {
+    line-height: 15px;
+    margin: 0;
+  }
+}

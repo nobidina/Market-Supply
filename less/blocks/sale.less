@@ -1,0 +1,99 @@
+.sale {
+  .clearfix();
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 35px;
+  &__item {
+    position: relative;
+    float: left;
+    width: 396px;
+    &:nth-of-type(2n+1) {
+      margin-right: 43px;
+    }
+  }
+  &__img-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 234px;
+    height: 228px;
+    &_1 {
+      background: #dcdadb url("../img/sale-1.png") no-repeat center right;
+      background-size: cover;
+    }
+    &_2 {
+      background: #dcdadb url("../img/sale-2.png") no-repeat center right;
+      background-size: cover;
+    }
+  }
+  &__content-wrapper {
+    position: relative;
+    box-sizing: border-box;
+    width: 170px;
+    max-height: 228px;
+    margin-left: 233px;
+    padding-top: 48px;
+    padding-right: 30px;
+    padding-bottom: 39px;
+    background-color: @bg-white;
+    text-align: right;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -72px;
+      bottom: 0;
+      border-color: transparent transparent @bg-white transparent;
+      border-style: solid;
+      border-width: 0 0 229px 73px;
+      width: 0;
+      height: 0;
+    }
+  }
+  &__date {
+    font-family: @font-bold;
+    font-size: 50px;
+    line-height: 50px;
+    color: @light-grey;
+  }
+  &__title {
+    margin: 0 0 15px 0;
+    font-family: @font-bold;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+  }
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+    border-bottom: 2px solid @blue;
+    font-family: @font-bold;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: @blue;
+  }
+  &__tip {
+    display: block;
+    font-size: 12px;
+    color: @light-grey;
+  }
+}
+
+@media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+  .sale__img-wrapper {
+    &_1 {
+      background: #dcdadb url("../img/sale-1@2x.png") no-repeat center right;
+      background-size: cover;
+    }
+    &_2 {
+      background: #dcdadb url("../img/sale-2@2x.png") no-repeat center right;
+      background-size: cover;
+    }
+  }
+}

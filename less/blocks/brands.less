@@ -1,0 +1,38 @@
+.brands {
+  clear: both;
+  .clearfix();
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: @bg-red;
+  &__item {
+    display: block;
+    float: left;
+    width: 115px;
+    min-height: 105px;
+    margin-right: 90px;
+    &:nth-of-type(6n+1) {
+      margin-left: 15px;
+    }
+    &:nth-of-type(6n+6) {
+      margin-right: 15px;
+    }
+    &_1 {
+      background: url(../img/brands.png) no-repeat 1px 3px;
+    }
+    &_2 {
+      background: url(../img/brands.png) no-repeat -206px 3px;
+    }
+    &_3 {
+      background: url(../img/brands.png) no-repeat -437px 3px;
+    }
+    &_4 {
+      background: url(../img/brands.png) no-repeat -647px 3px;
+    }
+    &_5 {
+      background: url(../img/brands.png) no-repeat -848px 3px;
+    }
+    &_6 {
+      background: url(../img/brands.png) no-repeat 1px 3px;
+    }
+  }
+}

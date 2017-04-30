@@ -1,0 +1,49 @@
+.dropdown-menu {
+  float: left;
+  position: relative;
+  width: 297px;
+  &__toggle {
+    cursor: pointer;
+    width: 100%;
+    padding: 0 0 0 57px;
+    border: none;
+    outline: none;
+    background: @bg-red url("../img/burger.png") no-repeat 24px center;
+    background-size: 18px 14px;
+    text-align: left;
+    font-family: @font-bold;
+    font-size: 15px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: @white;
+  }
+  &__list {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    list-style: none;
+    box-sizing: border-box;
+    width: 297px;
+    margin: 0;
+    padding: 0 15px 9px 15px;
+    background-color: @white;
+  }
+  &__item {
+    width: 267px;
+    border-bottom: 1px solid @bg-grey;
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+  &__link {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding-left: 42px;
+    background: url("../img/play.png") no-repeat 10px center;
+    background-size: 13px 13px;
+    line-height: 49px;
+    text-decoration: none;
+    color: @bg-dark-grey;
+  }
+}

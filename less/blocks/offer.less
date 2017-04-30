@@ -1,0 +1,44 @@
+.offer {
+  width: 835px;
+  margin-left: 336px;
+  padding-top: 88px;
+  padding-bottom: 70px;
+  background: #ffd180 url("../img/offer.jpg") no-repeat top center;
+  background-size: cover;
+  &__content-wrapper {
+    width: 441px;
+    margin-left: 18px;
+    text-align: center;
+  }
+  &__title {
+    margin: 0;
+    font-family: @font-black;
+    font-size: 38px;
+    line-height: 38px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #e8ba6e;
+    color: @dark-blue;
+    &_white {
+      font-size: 60px;
+      line-height: 60px;
+      color: @white;
+    }
+  }
+  &__text {
+    margin: 0 0 40px 0;
+    font-family: @font-bold;
+    font-size: 22px;
+    line-height: 38px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #e8ba6e;
+    color: @white;
+  }
+}
+
+@media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+  .offer {
+    background: #ffd180 url("../img/offer@2x.jpg") no-repeat top center;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,28 @@
+.cart {
+  .clearfix();
+  float: right;
+  width: 107px;
+  &__img-wrapper {
+    float: left;
+    width: 38px;
+    height: 38px;
+    margin-top: 2px;
+    margin-right: 7px;
+    border-radius: 50%;
+    background: @bg-red url("../img/cart.png") no-repeat center center;
+    background-size: 15px 12px;
+  }
+  &__text-wrapper {
+    float: left;
+    color: @white;
+    text-transform: uppercase;
+    line-height: 17px;
+  }
+  &__text {
+    font-size: 11px;
+  }
+  &__price {
+    font-family: @font-bold;
+    font-size: 13px;
+  }
+}

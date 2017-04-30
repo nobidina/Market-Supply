@@ -1,0 +1,32 @@
+.user-menu {
+  width: 100%;
+  .clearfix();
+  &__list {
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    line-height: 10px;
+  }
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 24px;
+    margin-right: -3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 2px solid @white;
+    &:last-child {
+      padding-right: 6px;
+      border-right: none;
+    }
+  }
+  &__link {
+    display: block;
+    font-size: 12px;
+    line-height: 11px;
+    text-decoration: none;
+    color: @white;
+  }
+}

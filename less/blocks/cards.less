@@ -1,0 +1,36 @@
+.cards {
+  width: 250px;
+  margin-right: 10px;
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 45px;
+    height: 31px;
+    margin-right: 19px;
+    margin-bottom: 12px;
+    &:nth-of-type(4n+4) {
+      margin-right: 0;
+    }
+    &_mastercard {
+      background: url("../img/spritesheet.png") no-repeat -62px -5px;
+    }
+    &_discover {
+      background: url("../img/spritesheet.png") no-repeat -131px -5px;
+    }
+    &_americanexpress {
+      background: url("../img/spritesheet.png") no-repeat -199px -5px;
+    }
+    &_visa {
+      background: url("../img/spritesheet.png") no-repeat -267px -5px;
+    }
+    &_stripe {
+      background: url("../img/spritesheet.png") no-repeat -322px -5px;
+    }
+    &_dinersclub {
+      background: url("../img/spritesheet.png") no-repeat -390px -5px;
+    }
+    &_jcb {
+      background: url("../img/spritesheet.png") no-repeat -458px -5px;
+    }
+  }
+}

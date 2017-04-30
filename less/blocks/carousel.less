@@ -1,0 +1,105 @@
+.carousel {
+  position: relative;
+}
+.carousel__item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  &_1 {
+    z-index: 2;
+    opacity: 1;
+  }
+  &_hot-deal-1 {
+    z-index: 2;
+    opacity: 1;
+  }
+  &_special-deal-1 {
+    z-index: 2;
+    opacity: 1;
+  }
+  &_new-product-1 {
+    z-index: 2;
+    opacity: 1;
+  }
+  &_latest-product-1 {
+    z-index: 2;
+    opacity: 1;
+  }
+  &_featured-product-1 {
+    z-index: 2;
+    opacity: 1;
+  }
+}
+.carousel__arrow {
+  position: absolute;
+  top: -75px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  &_prev {
+    right: 30px;
+    background: red url("../img/spritesheet.png") no-repeat 2px 0;
+  }
+  &_next {
+    right: 0;
+    background: red url("../img/spritesheet.png") no-repeat -11px 0;
+  }
+  &_hot-deal-prev {
+    right: 30px;
+    background: red url("../img/spritesheet.png") no-repeat 2px 0;
+  }
+  &_hot-deal-next {
+    right: 0;
+    background: red url("../img/spritesheet.png") no-repeat -11px 0;
+  }
+  &_special-deal-prev {
+    right: 30px;
+    background: red url("../img/spritesheet.png") no-repeat 2px 0;
+  }
+  &_special-deal-next {
+    right: 0;
+    background: red url("../img/spritesheet.png") no-repeat -11px 0;
+  }
+}
+
+[id^="target"] {
+  display: none;
+}
+
+*:target ~ .carousel__item_1,
+*:target ~ .carousel__item_2,
+*:target ~ .carousel__item_hot-deal-1,
+*:target ~ .carousel__item_hot-deal-2,
+*:target ~ .carousel__item_special-deal-1,
+*:target ~ .carousel__item_special-deal-2,
+*:target ~ .carousel__item_new-product-1,
+*:target ~ .carousel__item_new-product-2,
+*:target ~ .carousel__item_latest-product-1,
+*:target ~ .carousel__item_latest-product-2,
+*:target ~ .carousel__item_featured-product-1,
+*:target ~ .carousel__item_featured-product-2 {
+  opacity: 0;
+}
+
+#target-item-1:target ~ .carousel__item_1,
+#target-hot-deal-1:target ~ .carousel__item_hot-deal-1,
+#target-special-deal-1:target ~ .carousel__item_special-deal-1,
+#target-new-product-1:target ~ .carousel__item_new-product-1,
+#target-latest-product-1:target ~ .carousel__item_latest-product-1,
+#target-featured-product-1:target ~ .carousel__item_featured-product-1 {
+  opacity: 1;
+}
+  #target-item-2:target ~ .carousel__item_2,
+  #target-hot-deal-2:target ~ .carousel__item_hot-deal-2,
+  #target-special-deal-2:target ~ .carousel__item_special-deal-2,
+  #target-new-product-2:target ~ .carousel__item_new-product-2,
+  #target-latest-product-2:target ~ .carousel__item_latest-product-2,
+  #target-featured-product-2:target ~ .carousel__item_featured-product-2 {
+    z-index: 3;
+    opacity: 1;
+}
