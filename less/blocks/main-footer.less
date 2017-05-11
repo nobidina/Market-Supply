@@ -62,10 +62,30 @@
     margin-right: 22px;
   }
   &__link {
+    position: relative;
     font-size: 14px;
     line-height: 30px;
     text-decoration: none;
     color: @light-grey;
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: @white;
+    }
+    &:hover:after {
+      display: block;
+    }
+    &:active {
+      color: @grey;
+    }
+    &:active:after {
+      background-color: @grey;
+    }
   }
   &__copyright {
     font-size: 14px;

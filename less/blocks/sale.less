@@ -69,13 +69,20 @@
     display: inline-block;
     vertical-align: top;
     margin-bottom: 10px;
-    border-bottom: 2px solid @blue;
+    border-bottom: 2px solid transparent;
     font-family: @font-bold;
     font-size: 15px;
     line-height: 20px;
     text-decoration: none;
     text-transform: uppercase;
     color: @blue;
+    &:hover {
+      border-bottom: 2px solid @blue;
+    }
+    &:active {
+      border-bottom: 2px solid #7ad3ea;
+      color: #7ad3ea;
+    }
   }
   &__tip {
     display: block;

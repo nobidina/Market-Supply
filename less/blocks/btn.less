@@ -10,6 +10,13 @@
   font-size: 16px;
   text-transform: uppercase;
   color: @white;
+  &:hover {
+    box-shadow: 0 0 2px 1px #c52f49;
+  }
+  &:active {
+    box-shadow: none;
+    background: @bg-grey;
+  }
   &_black {
     width: 142px;
     padding: 9px 18px;
@@ -18,6 +25,16 @@
     background: none;
     font-size: 18px;
     color: @bg-black;
+    &:hover {
+      box-shadow: none;
+      background-color: @black;
+      color: @white;
+    }
+    &:active {
+      border: 2px solid @bg-grey;
+      background-color: @bg-grey;
+      color: @white;
+    }
   }
   &_wide {
     padding-left: 20px;
