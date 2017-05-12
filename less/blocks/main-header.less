@@ -9,10 +9,17 @@
     .clearfix();
     background-color: @bg-red;
   }
+  &__right-block {
+    .clearfix();
+    float: right;
+    width: 735px;
+  }
 }
 
-.main-header__right-block {
-  .clearfix();
-  float: right;
-  width: 735px;
+@media @tablet-widths {
+  .main-header {
+    &__right-block {
+    width: 400px;
+    }
+  }
 }

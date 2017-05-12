@@ -27,7 +27,20 @@
 @media (min-resolution: 144dpi),
         (min-resolution: 1.5dppx) {
   .offer-mini {
-    background: @bg-white url("../img/offer-mini@2x.jpg") no-repeat 15px 34px;
+    background: @bg-white url("../img/offer-mini@2x.jpg") no-repeat -6px 34px;
     background-size: 498px 162px;
+  }
+}
+
+@media @tablet-widths {
+  .offer-mini {
+    width: 738px;
+    padding-left: 487px;
+    &__title {
+      font-size: 20px;
+    }
+    &__text {
+      font-size: 17px;
+    }
   }
 }
