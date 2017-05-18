@@ -126,3 +126,31 @@
     }
   }
 }
+
+@media @mobile-widths {
+  .sale {
+    margin-bottom: 20px;
+    &__item {
+      width: 320px;
+      &:nth-of-type(2n+1) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+    &__img-wrapper {
+      width: 165px;
+      height: 173px;
+    }
+    &__content-wrapper {
+      margin-left: 163px;
+      padding-top: 28px;
+      padding-bottom: 15px;
+      &::before {
+        border-bottom-width: 173px;
+      }
+    }
+    &__title {
+      font-size: 12px;
+    }
+  }
+}

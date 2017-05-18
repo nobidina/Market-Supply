@@ -44,3 +44,23 @@
     }
   }
 }
+
+@media @mobile-widths {
+  .offer-mini {
+    width: 320px;
+    margin-bottom: 20px;
+    padding-top: 175px;
+    padding-left: 0;
+    text-align: center;
+    background: @bg-white url("../img/offer-mini-mobile.jpg") no-repeat 2px 34px;
+    background-size: 320px 119px;
+  }
+
+  @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+    .offer-mini {
+      background: @bg-white url("../img/offer-mini-mobile@2x.jpg") no-repeat 2px 34px;
+      background-size: 320px 119px;
+    }
+  }
+}

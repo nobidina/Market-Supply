@@ -9,6 +9,7 @@
     outline: none;
     border: none;
     border-radius: 5px;
+    -webkit-appearance: none;
     font-size: 15px;
     line-height: 15px;
   }
@@ -24,6 +25,8 @@
     outline: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     background: @bg-red url("../../img/search.png") no-repeat center center;
     background-size: 14px 14px;
   }
@@ -32,5 +35,16 @@
 @media @tablet-widths {
   .search-block {
     width: 270px;
+  }
+}
+
+@media @mobile-widths {
+  .search-block {
+    width: 185px;
+    margin-left: 9px;
+    &__search {
+      padding-left: 15px;
+      font-size: 13px;
+    }
   }
 }

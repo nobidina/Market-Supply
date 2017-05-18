@@ -9,7 +9,7 @@
   &_margin-bottom {
     margin-bottom: 42px;
   }
-  &_height {
+  &__six-items {
     min-height: 390px;
     margin-bottom: 68px;
   }
@@ -17,7 +17,7 @@
     .clearfix();
     margin-bottom: 27px;
     border-bottom: 1px solid @bg-grey;
-    &_margin-bottom {
+    &_six-items {
       margin-bottom: 39px;
     }
   }
@@ -61,11 +61,36 @@
 
 @media @tablet-widths {
   .product-group {
-    &_narrow {
+    &_one-item {
       width: 297px;
     }
-    &_height {
+    &_six-items {
       min-height: 525px;
+    }
+  }
+}
+
+@media @mobile-widths {
+  .product-group {
+    width: 297px;
+    margin: 0 auto 20px auto;
+    &_four-items {
+      min-height: 510px;
+    }
+    &_six-items {
+      min-height: 715px;
+    }
+    &__title {
+      font-size: 17px;
+    }
+    &__menu {
+      width: 250px;
+      margin-top: -10px;
+      margin-right: 0;
+    }
+    &__link {
+      padding: 0 4px;
+      line-height: 35px;
     }
   }
 }

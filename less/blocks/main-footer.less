@@ -118,3 +118,51 @@
     }
   }
 }
+
+@media @mobile-widths {
+  .main-footer {
+    &__top-wrapper {
+      padding: 30px 10px;
+    }
+    &__bottom-wrapper {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    &__item {
+      width: 300px;
+      min-height: 10px;
+      margin-right: 0;
+      &_thin {
+        width: 300px;
+      }
+      &_flex {
+        width: 100%;
+        min-height: 150px;
+        display: block;
+      }
+    }
+    &__item-inner {
+      width: 100%;
+    }
+    &__title {
+      width: 100%;
+      text-align: center;
+      line-height: 85px;
+    }
+    &__list {
+      max-height: 40px;
+      &_vertical {
+        width: 297px;
+      }
+    }
+    &__list-element {
+      float: left;
+      width: 127px;
+      margin-left: 20px;
+    }
+    &__copyright {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+}
