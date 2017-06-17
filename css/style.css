@@ -950,6 +950,9 @@ img {
     display: block;
     width: 300px;
   }
+  .dropdown-menu__list_hidden {
+    display: none;
+  }
 }
 .features {
   width: 835px;
