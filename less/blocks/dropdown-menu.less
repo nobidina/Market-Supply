@@ -16,6 +16,9 @@
     line-height: 50px;
     text-transform: uppercase;
     color: @white;
+    &_close {
+      background: @bg-red url("../img/burger.png") no-repeat 24px center;
+    }
   }
   &__list {
     position: absolute;
@@ -59,7 +62,8 @@
     display: block;
     width: 290px;
     &__list {
-      display: none;
+      display: block;
+      width: 300px;
     }
   }
 }
